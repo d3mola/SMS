@@ -4,9 +4,13 @@ const routes = require('./src/routes');
 
 const app = express();
 
-const connectionString = 'mongodb://localhost:27017/sms_management_dev';
+const connectionString = process.env.MONGODB_URI;
 
-mongoose.connect(connectionString, { useNewUrlParser: true }, () => {
+mongoose.connect(connectionString, {
+    useNewUrlParser: true,
+    useCreateIndex: true,
+    useFindAndModify: false
+  }, () => {
     console.log('db connected successfully...');
 });
 
