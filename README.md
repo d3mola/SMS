@@ -1,12 +1,14 @@
-# PMS
-Api for a population management system
+# SMS
+Api for an sms management system
 
 ## Features
-- User can create a location
-- User can update a location
-- User can delete a location
-- User can view the list of locations
-- User can get a single location
+- Creating a contact
+- Updating a contact
+- Viewing all contacts
+- Viewing all contacts
+- Deleting a contact
+- Sending a message
+- Reading a message
 
 ## Requirements
 - Node.js v8.x or higher
@@ -17,7 +19,7 @@ Api for a population management system
 ```
 $ git clone https://github.com/d3mola/PMS.git
 $ cd population-management-system
-$ yarn
+$ yarn                   # Install dependencies
 $ yarn dev               # Start the development environment
 $ yarn start             # Run the production build
 ```
